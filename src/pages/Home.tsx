@@ -8,12 +8,12 @@ export default function Home({ onNavigate }: HomeProps) {
   return (
     <div className="min-h-screen">
       {/* Hero Section - Split Layout */}
-      <section className="page-content py-20 px-4">
+      <section className="page-content py-12 md:py-20 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
             {/* Left Content */}
-            <div className="bg-[#F0F4F8] rounded-[40px] p-12 md:p-16">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1F2A44] mb-8 leading-tight">
+            <div className="bg-[#F0F4F8] rounded-3xl md:rounded-[40px] p-8 md:p-12 lg:p-16">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1F2A44] mb-6 md:mb-8 leading-tight">
                 Where comfort meets compassion
               </h1>
               <button
@@ -36,7 +36,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
             
             {/* Right Image */}
-            <div className="rounded-[40px] overflow-hidden h-[500px] md:h-[600px]">
+            <div className="rounded-3xl md:rounded-[40px] overflow-hidden h-[300px] md:h-[500px] lg:h-[600px]">
               <img 
                 src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&q=80" 
                 alt="Caregiver with senior"
@@ -48,11 +48,11 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* Who We Are Section */}
-      <section className="py-24 px-4 bg-white">
+      <section className="py-12 md:py-20 lg:py-24 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-[1fr_2fr_1fr] gap-8 items-center mb-16">
+          <div className="grid md:grid-cols-12 gap-6 md:gap-8 items-center mb-16">
             {/* Left Image */}
-            <div className="hidden md:block rounded-3xl overflow-hidden h-[350px]">
+            <div className="hidden lg:block md:col-span-3 rounded-3xl overflow-hidden h-[350px]">
               <img 
                 src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=400&q=80" 
                 alt="Caregiver with senior"
@@ -61,7 +61,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
             
             {/* Center Content */}
-            <div className="text-center px-4">
+            <div className="md:col-span-12 lg:col-span-6 text-center px-4">
               <p className="text-sm text-[#D4AF37] font-semibold mb-4 tracking-wider">WHO WE ARE</p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-[#1F2A44] leading-tight">
                 Care that respects, comforts, and supports
@@ -81,7 +81,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
 
             {/* Right Image */}
-            <div className="hidden md:block rounded-3xl overflow-hidden h-[350px]">
+            <div className="hidden lg:block md:col-span-3 rounded-3xl overflow-hidden h-[350px]">
               <img 
                 src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=400&q=80" 
                 alt="Senior care"
@@ -91,7 +91,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
 
           {/* Icon Features */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-20">
             {[
               { icon: Users, title: 'Experienced caregivers', desc: 'Our trained team brings both experience and genuine compassion to every caregiving moment.' },
               { icon: Heart, title: 'Personalized care plans', desc: 'Every senior has unique needs. We create care plans tailored to individual preferences and requirements.' },
@@ -114,7 +114,7 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* Services Section - Dark Navy Background */}
-      <section className="py-24 px-4 bg-[#1F2A44] text-white">
+      <section className="py-12 md:py-20 lg:py-24 px-4 bg-[#1F2A44] text-white">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -126,7 +126,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { icon: Pill, title: 'Medication management', desc: 'We improve seniors\' quality of life with mindful medication scheduling and support.' },
               { icon: Clock, title: '24/7 supervision', desc: 'Always someone available when you need help or assistance.' },
@@ -161,7 +161,7 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* Pricing Section - 3 Cards */}
-      <section className="py-24 px-4 bg-white">
+      <section className="py-12 md:py-20 lg:py-24 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#1F2A44]">
@@ -169,7 +169,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto items-start">
             {/* Shared Room - Light Gold Tint */}
             <div className="bg-[#FFF9E6] rounded-3xl p-8">
               <p className="text-[#D4AF37] text-sm font-semibold mb-3">Shared room plan</p>
@@ -250,25 +250,20 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* Book Appointment Section - Split Layout */}
-      <section className="py-24 px-4 bg-white">
+      <section className="py-12 md:py-20 lg:py-24 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-0 items-stretch">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left Image */}
-            <div className="relative h-[500px] md:h-auto">
+            <div className="rounded-3xl overflow-hidden h-[300px] md:h-[400px] lg:h-[500px] order-2 md:order-1">
               <img 
                 src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&q=80" 
                 alt="Caregiver with senior"
-                className="w-full h-full object-cover rounded-l-3xl"
+                className="w-full h-full object-cover"
               />
-              {/* Pause button overlay like in template */}
-              <button className="absolute bottom-8 left-8 w-12 h-12 bg-[#1F2A44] rounded-lg flex items-center justify-center hover:bg-[#2D3E5F] transition-all">
-                <div className="w-2 h-4 bg-white mr-0.5"></div>
-                <div className="w-2 h-4 bg-white"></div>
-              </button>
             </div>
 
             {/* Right Form */}
-            <div className="bg-[#F0F4F8] p-12 md:p-16 rounded-r-3xl">
+            <div className="bg-[#F0F4F8] rounded-3xl p-6 md:p-8 lg:p-10 order-1 md:order-2">
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#1F2A44]">
                 Book appointment
               </h2>

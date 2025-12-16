@@ -82,10 +82,23 @@ html {
   border-bottom-left-radius: 0.75rem;
 }
 
+/* Mobile Button Adjustments */
+@media (max-width: 640px) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-gold {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.875rem;
+  }
+}
+
 /* Chatbase Custom Styling */
 #chatbase-bubble-button {
   background: linear-gradient(135deg, #D4AF37 0%, #E5C158 100%) !important;
   box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4) !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 #chatbase-bubble-button:hover {
@@ -93,6 +106,24 @@ html {
   box-shadow: 0 6px 25px rgba(212, 175, 55, 0.6) !important;
 }
 
-iframe[id^="chatbase-bubble"] {
+iframe[id^="chatbase-bubble"],
+iframe[id*="chatbase"] {
   z-index: 9999 !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* Mobile Chatbase positioning */
+@media (max-width: 768px) {
+  #chatbase-bubble-button {
+    bottom: 20px !important;
+    right: 20px !important;
+    width: 56px !important;
+    height: 56px !important;
+  }
+  
+  iframe[id^="chatbase-bubble"] {
+    bottom: 20px !important;
+    right: 20px !important;
+  }
 }
