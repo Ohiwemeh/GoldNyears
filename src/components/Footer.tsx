@@ -1,90 +1,95 @@
-import { Mail, MapPin, Phone, Heart } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-[#1F2A44] to-[#2D3E5F] text-white">
+    <footer className="bg-[#0B1E3D] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          {/* Brand */}
-          <div className="md:col-span-1">
+        {/* Top Section with Contact Info */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 pb-12 border-b border-white/10">
+          {/* Logo */}
+          <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#D4AF37] to-[#E5C158] rounded-lg flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-xl">GY</span>
+              <div className="w-10 h-10 border-2 border-[#D4AF37] rounded-full flex items-center justify-center">
+                <span className="text-[#D4AF37] font-bold text-lg">GY</span>
               </div>
-              <div>
-                <div className="text-white text-lg font-bold">GoldNyears</div>
-                <div className="text-[#D4AF37] text-xs font-medium">Golden Years Residence</div>
-              </div>
-            </div>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              Boutique residential care with dignity and heart in Memphis-Collierville.
-            </p>
-          </div>
-
-          {/* Mailing Address */}
-          <div>
-            <h3 className="text-[#D4AF37] font-bold text-lg mb-4">Office Address</h3>
-            <div className="flex items-start space-x-3">
-              <MapPin className="text-[#D4AF37] mt-1 shrink-0" size={18} />
-              <p className="text-gray-300 text-sm leading-relaxed">
-                Golden Years Residence LLC<br />
-                875 W. Poplar Ave<br />
-                Suite 23-225<br />
-                Collierville, TN 38017
-              </p>
+              <div className="text-white text-xl font-bold">GoldNyears</div>
             </div>
           </div>
 
-          {/* Residence Address */}
-          <div>
-            <h3 className="text-[#D4AF37] font-bold text-lg mb-4">Residence</h3>
-            <div className="flex items-start space-x-3">
-              <MapPin className="text-[#D4AF37] mt-1 shrink-0" size={18} />
-              <p className="text-gray-300 text-sm leading-relaxed">
-                5258 Rolling Ridge Cove<br />
-                Memphis, TN 38141
-              </p>
+          {/* Call us on */}
+          <div className="flex items-start space-x-3">
+            <div className="w-10 h-10 bg-[#1F2A44] rounded-lg flex items-center justify-center shrink-0">
+              <Phone className="text-[#D4AF37]" size={18} />
+            </div>
+            <div>
+              <p className="text-gray-400 text-sm mb-1">Call us on:</p>
+              <p className="text-white font-medium">Coming Soon</p>
             </div>
           </div>
 
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-[#D4AF37] font-bold text-lg mb-4">Contact</h3>
-            <div className="space-y-3">
-              <div className="flex items-start space-x-3">
-                <Phone className="text-[#D4AF37] mt-0.5 shrink-0" size={18} />
-                <p className="text-gray-300 text-sm">Coming Soon</p>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Mail className="text-[#D4AF37] mt-0.5 shrink-0" size={18} />
-                <a 
-                  href="mailto:goldenyears25@proton.me" 
-                  className="text-gray-300 hover:text-[#D4AF37] transition-colors text-sm break-all"
-                >
-                  goldenyears25@proton.me
-                </a>
-              </div>
+          {/* E-mail on */}
+          <div className="flex items-start space-x-3">
+            <div className="w-10 h-10 bg-[#1F2A44] rounded-lg flex items-center justify-center shrink-0">
+              <Mail className="text-[#D4AF37]" size={18} />
+            </div>
+            <div>
+              <p className="text-gray-400 text-sm mb-1">E-mail on:</p>
+              <a href="mailto:goldenyears25@proton.me" className="text-white font-medium hover:text-[#D4AF37] transition-colors">
+                goldenyears25@proton.me
+              </a>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Golden Years Residence LLC. All rights reserved.
-            </p>
-            <div className="flex items-center space-x-6">
-              <button className="text-gray-400 hover:text-[#D4AF37] transition-colors text-sm">Privacy Policy</button>
-              <button className="text-gray-400 hover:text-[#D4AF37] transition-colors text-sm">Terms of Service</button>
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {/* Page Links */}
+          <div>
+            <h3 className="text-white font-bold text-lg mb-6">Page link</h3>
+            <div className="grid grid-cols-2 gap-x-8 gap-y-3">
+              <a href="#home" className="text-gray-300 hover:text-[#D4AF37] transition-colors text-sm">Home</a>
+              <a href="#our-story" className="text-gray-300 hover:text-[#D4AF37] transition-colors text-sm">Our Story</a>
+              <a href="#contact" className="text-gray-300 hover:text-[#D4AF37] transition-colors text-sm">Contact</a>
+              <a href="#care-services" className="text-gray-300 hover:text-[#D4AF37] transition-colors text-sm">Services</a>
+              <a href="#residence" className="text-gray-300 hover:text-[#D4AF37] transition-colors text-sm">Residence</a>
+              <a href="#pricing" className="text-gray-300 hover:text-[#D4AF37] transition-colors text-sm">Pricing</a>
+              <a href="#faqs" className="text-gray-300 hover:text-[#D4AF37] transition-colors text-sm">FAQs</a>
+              <a href="#veterans-memory-care" className="text-gray-300 hover:text-[#D4AF37] transition-colors text-sm">Veterans Care</a>
             </div>
-            <p className="text-gray-400 text-sm flex items-center space-x-2">
-              <span>Made with</span>
-              <Heart className="text-[#D4AF37]" size={16} fill="currentColor" />
-              <span>in Memphis</span>
-            </p>
           </div>
+
+          {/* Address */}
+          <div>
+            <div className="flex items-start space-x-3">
+              <div className="w-10 h-10 bg-[#1F2A44] rounded-lg flex items-center justify-center shrink-0">
+                <MapPin className="text-[#D4AF37]" size={18} />
+              </div>
+              <div>
+                <p className="text-gray-400 text-sm mb-2">Address:</p>
+                <p className="text-white text-sm leading-relaxed">
+                  5258 Rolling Ridge Cove<br />
+                  Memphis, TN 38141
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Card */}
+          <div className="bg-[#5BA3D0] rounded-2xl p-6">
+            <h3 className="text-[#0B1E3D] text-xl font-bold mb-2">
+              Need immediate assistance? We're here to help 24/7
+            </h3>
+            <button className="btn-primary mt-4 w-full">
+              Call for emergency support
+            </button>
+          </div>
+        </div>
+
+        {/* Bottom Copyright */}
+        <div className="mt-12 pt-8 border-t border-white/10 text-center">
+          <p className="text-gray-400 text-sm">
+            © {new Date().getFullYear()} Golden Years Residence LLC. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

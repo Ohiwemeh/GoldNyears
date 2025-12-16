@@ -114,13 +114,13 @@ export default function FAQs() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:goldenyears25@proton.me"
-              className="bg-[#D4AF37] text-[#1F2A44] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c49d2f] transition-colors"
+              className="btn-gold"
             >
               Email Us
             </a>
             <a
               href="tel:"
-              className="bg-[#1F2A44] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#2a3a5a] transition-colors"
+              className="btn-primary"
             >
               Call Us
             </a>

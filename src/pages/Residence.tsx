@@ -114,7 +114,7 @@ export default function Residence({ onNavigate }: ResidenceProps) {
         <div className="max-w-4xl mx-auto text-center">
           <button
             onClick={() => onNavigate('care-services')}
-            className="inline-flex items-center space-x-2 bg-[#D4AF37] text-[#1F2A44] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c49d2f] transition-colors"
+            className="btn-gold inline-flex items-center space-x-2"
           >
             <span>View Our Care & Services</span>
             <ArrowRight size={20} />

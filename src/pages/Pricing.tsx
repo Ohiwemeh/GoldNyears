@@ -55,7 +55,7 @@ export default function Pricing({ onNavigate }: PricingProps) {
               </div>
               <button
                 onClick={() => onNavigate('contact')}
-                className="w-full py-4 bg-[#1F2A44] text-white rounded-2xl font-semibold mb-8 hover:bg-[#2D3E5F] transition-all"
+                className="btn-primary w-full mb-8"
               >
                 Book now
               </button>
@@ -80,7 +80,7 @@ export default function Pricing({ onNavigate }: PricingProps) {
                 </div>
                 <button
                   onClick={() => onNavigate('contact')}
-                  className="w-full py-4 bg-white text-[#1F2A44] rounded-2xl font-semibold mb-8 hover:bg-gray-100 transition-all"
+                  className="btn-secondary w-full mb-8"
                 >
                   Book now
                 </button>
@@ -101,7 +101,7 @@ export default function Pricing({ onNavigate }: PricingProps) {
               <h3 className="text-2xl font-bold text-[#1F2A44] mb-8">Customized plan</h3>
               <button
                 onClick={() => onNavigate('contact')}
-                className="w-full py-4 bg-[#1F2A44] text-white rounded-2xl font-semibold mb-8 hover:bg-[#2D3E5F] transition-all"
+                className="btn-primary w-full mb-8"
               >
                 Contact us
               </button>
@@ -187,7 +187,7 @@ export default function Pricing({ onNavigate }: PricingProps) {
           </p>
           <button
             onClick={() => onNavigate('contact')}
-            className="inline-flex items-center space-x-2 bg-[#D4AF37] text-[#1F2A44] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c49d2f] transition-colors"
+            className="btn-gold inline-flex items-center space-x-2"
           >
             <span>Request a Personalized Cost Estimate</span>
             <ArrowRight size={20} />

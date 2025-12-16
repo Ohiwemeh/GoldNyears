@@ -15,6 +15,73 @@ html {
   }
 }
 
+/* Global Button Styles with Corner-Switching Effect */
+.btn-primary {
+  background: #1F2A44;
+  color: white;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  transition: all 0.4s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #2D3E5F;
+  border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+.btn-secondary {
+  background: white;
+  color: #1F2A44;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  transition: all 0.4s ease;
+  border: 2px solid #1F2A44;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #f8f9fa;
+  border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+.btn-gold {
+  background: #D4AF37;
+  color: #1F2A44;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  transition: all 0.4s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-gold:hover {
+  background: #c49d2f;
+  border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
 /* Chatbase Custom Styling */
 #chatbase-bubble-button {
   background: linear-gradient(135deg, #D4AF37 0%, #E5C158 100%) !important;

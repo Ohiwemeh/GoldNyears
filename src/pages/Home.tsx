@@ -18,7 +18,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </h1>
               <button
                 onClick={() => onNavigate('care-services')}
-                className="px-8 py-4 bg-[#1F2A44] text-white rounded-lg font-semibold hover:bg-[#2D3E5F] transition-all inline-block mb-16"
+                className="btn-primary inline-block mb-16"
               >
                 Explore services
               </button>
@@ -74,7 +74,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </p>
               <button
                 onClick={() => onNavigate('our-story')}
-                className="px-8 py-3 bg-[#5BA3D0] text-white rounded-lg font-semibold hover:bg-[#4A92BF] transition-all"
+                className="btn-primary"
               >
                 More about us
               </button>
@@ -150,7 +150,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="bg-[#5BA3D0] rounded-2xl p-8 flex items-center justify-center">
               <button
                 onClick={() => onNavigate('care-services')}
-                className="text-center"
+                className="btn-secondary text-center w-full"
               >
                 <h3 className="text-2xl font-bold mb-2">Discover our full range of care services</h3>
                 <ArrowRight className="mx-auto mt-4" size={24} />
@@ -179,7 +179,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </div>
               <button
                 onClick={() => onNavigate('contact')}
-                className="w-full py-4 bg-[#1F2A44] text-white rounded-2xl font-semibold mb-8 hover:bg-[#2D3E5F] transition-all"
+                className="btn-primary w-full mb-8"
               >
                 Book now
               </button>
@@ -204,7 +204,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 </div>
                 <button
                   onClick={() => onNavigate('contact')}
-                  className="w-full py-4 bg-white text-[#1F2A44] rounded-2xl font-semibold mb-8 hover:bg-gray-100 transition-all"
+                  className="btn-secondary w-full mb-8"
                 >
                   Book now
                 </button>
@@ -225,7 +225,7 @@ export default function Home({ onNavigate }: HomeProps) {
               <h3 className="text-2xl font-bold text-[#1F2A44] mb-8">Customized plan</h3>
               <button
                 onClick={() => onNavigate('contact')}
-                className="w-full py-4 bg-[#1F2A44] text-white rounded-2xl font-semibold mb-8 hover:bg-[#2D3E5F] transition-all"
+                className="btn-primary w-full mb-8"
               >
                 Contact us
               </button>
@@ -339,7 +339,7 @@ export default function Home({ onNavigate }: HomeProps) {
                     e.preventDefault();
                     onNavigate('contact');
                   }}
-                  className="w-full md:w-auto px-10 py-4 bg-[#1F2A44] text-white rounded-lg font-semibold hover:bg-[#2D3E5F] transition-all"
+                  className="btn-primary w-full md:w-auto"
                 >
                   Book now
                 </button>

@@ -107,10 +107,10 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
                 </button>
               ))}
               
-              {/* CTA Button - Pill Shape */}
+              {/* CTA Button */}
               <button
                 onClick={() => handleNavClick('contact')}
-                className="ml-6 px-6 py-2.5 bg-[#1F2A44] hover:bg-[#D4AF37] text-white rounded-full font-medium text-sm shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2 transform hover:-translate-y-0.5"
+                className="btn-primary ml-6 flex items-center gap-2 text-sm"
               >
                 <Phone size={16} />
                 <span>Schedule Tour</span>
@@ -154,7 +154,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
           <div className="pt-6">
             <button
               onClick={() => handleNavClick('contact')}
-              className="w-full py-4 bg-[#1F2A44] text-white rounded-lg text-lg font-semibold shadow-lg active:scale-95 transition-transform flex justify-center items-center gap-2"
+              className="btn-primary w-full flex justify-center items-center gap-2"
             >
               <Phone size={20} />
               Book a Visit
