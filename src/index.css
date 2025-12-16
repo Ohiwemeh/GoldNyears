@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Account for fixed header */
+.page-content {
+  padding-top: 140px; /* Space for utility bar + nav */
+}
+
+@media (max-width: 1024px) {
+  .page-content {
+    padding-top: 90px; /* Smaller header on mobile */
+  }
+}
