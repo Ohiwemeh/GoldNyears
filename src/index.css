@@ -14,3 +14,18 @@ html {
     padding-top: 90px; /* Smaller header on mobile */
   }
 }
+
+/* Chatbase Custom Styling */
+#chatbase-bubble-button {
+  background: linear-gradient(135deg, #D4AF37 0%, #E5C158 100%) !important;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4) !important;
+}
+
+#chatbase-bubble-button:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.6) !important;
+}
+
+iframe[id^="chatbase-bubble"] {
+  z-index: 9999 !important;
+}

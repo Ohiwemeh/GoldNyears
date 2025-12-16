@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
-import ChatWidget from './components/ChatWidget';
 import Home from './pages/Home';
 import OurStory from './pages/OurStory';
 import Residence from './pages/Residence';
@@ -44,7 +43,6 @@ function App() {
         {renderPage()}
       </main>
       <Footer />
-      <ChatWidget />
     </div>
   );
 }
