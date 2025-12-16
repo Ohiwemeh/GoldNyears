@@ -1,11 +1,7 @@
 import { useState } from 'react';
 import { Heart, MessageCircle, X, Send } from 'lucide-react';
 
-interface ChatWidgetProps {
-  onNavigate?: (page: string) => void;
-}
-
-export default function ChatWidget({ onNavigate }: ChatWidgetProps) {
+export default function ChatWidget() {
   const [chatOpen, setChatOpen] = useState(false);
   const [chatStep, setChatStep] = useState(0);
   const [chatData, setChatData] = useState({
@@ -102,7 +98,7 @@ export default function ChatWidget({ onNavigate }: ChatWidgetProps) {
               {chatStep > 0 && (
                 <div className="flex justify-end">
                   <div className="bg-[#D4AF37] text-white rounded-lg rounded-tr-none p-3 shadow max-w-[80%]">
-                    <p className="text-sm">{chatData[chatQuestions[chatStep - 1].field]}</p>
+                    <p className="text-sm">{chatData[chatQuestions[chatStep - 1].field as keyof typeof chatData]}</p>
                   </div>
                 </div>
               )}

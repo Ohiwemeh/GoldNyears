@@ -44,7 +44,7 @@ function App() {
         {renderPage()}
       </main>
       <Footer />
-      <ChatWidget onNavigate={setCurrentPage} />
+      <ChatWidget />
     </div>
   );
 }
