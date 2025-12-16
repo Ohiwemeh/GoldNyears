@@ -169,71 +169,71 @@ export default function Home({ onNavigate }: HomeProps) {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Shared Room - Light Background */}
-            <div className="bg-[#F0F4F8] rounded-3xl p-8">
-              <h3 className="text-lg font-semibold text-[#1F2A44] mb-2">Shared Room</h3>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
+            {/* Shared Room - Light Blue */}
+            <div className="bg-[#E8F4F8] rounded-3xl p-8">
+              <p className="text-[#5BA3D0] text-sm font-semibold mb-3">Shared room plan</p>
               <div className="flex items-baseline mb-6">
-                <span className="text-4xl font-bold text-[#1F2A44]">$3,400</span>
-                <span className="text-gray-600 ml-2">/month</span>
+                <span className="text-5xl font-bold text-[#1F2A44]">$3,400</span>
+                <span className="text-gray-600 text-lg ml-1">/month</span>
               </div>
               <button
                 onClick={() => onNavigate('contact')}
-                className="w-full py-3 bg-[#1F2A44] text-white rounded-lg font-semibold mb-8 hover:bg-[#2D3E5F] transition-all"
+                className="w-full py-4 bg-[#0B1E3D] text-white rounded-2xl font-semibold mb-8 hover:bg-[#1F2A44] transition-all"
               >
                 Book now
               </button>
               <div className="space-y-3">
-                <p className="text-sm font-semibold text-[#1F2A44] mb-3">Included features:</p>
+                <p className="text-sm text-gray-500 mb-4">Included features:</p>
                 {['Shared bedroom', 'All meals included', '24/7 care & supervision', 'All amenities & activities'].map((item, i) => (
                   <div key={i} className="flex items-start space-x-2">
-                    <span className="text-[#1F2A44] mt-1">→</span>
+                    <span className="text-gray-600 mt-0.5">→</span>
                     <span className="text-sm text-gray-700">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Private Room - Dark Featured */}
-            <div className="bg-[#1F2A44] text-white rounded-3xl p-8 transform scale-105">
-              <h3 className="text-lg font-semibold mb-2">Private Room</h3>
-              <div className="flex items-baseline mb-6">
-                <span className="text-4xl font-bold">$4,000</span>
-                <span className="text-gray-300 ml-2">/month</span>
-              </div>
-              <button
-                onClick={() => onNavigate('contact')}
-                className="w-full py-3 bg-white text-[#1F2A44] rounded-lg font-semibold mb-8 hover:bg-gray-100 transition-all"
-              >
-                Book now
-              </button>
-              <div className="space-y-3">
-                <p className="text-sm font-semibold mb-3">Included features:</p>
-                {['Private bedroom & bathroom', 'All meals included', 'Medication management', 'Housekeeping & laundry'].map((item, i) => (
-                  <div key={i} className="flex items-start space-x-2">
-                    <span className="text-[#D4AF37] mt-1">→</span>
-                    <span className="text-sm text-gray-300">{item}</span>
-                  </div>
-                ))}
+            {/* Private Room - Dark Navy with Rounded Top-Right */}
+            <div className="relative">
+              <div className="bg-[#0B1E3D] text-white rounded-3xl rounded-tr-[80px] p-8">
+                <p className="text-[#5BA3D0] text-sm font-semibold mb-3">Private room plan</p>
+                <div className="flex items-baseline mb-6">
+                  <span className="text-5xl font-bold">$4,000</span>
+                  <span className="text-gray-300 text-lg ml-1">/month</span>
+                </div>
+                <button
+                  onClick={() => onNavigate('contact')}
+                  className="w-full py-4 bg-white text-[#0B1E3D] rounded-2xl font-semibold mb-8 hover:bg-gray-100 transition-all"
+                >
+                  Book now
+                </button>
+                <div className="space-y-3">
+                  <p className="text-sm text-gray-400 mb-4">Included features:</p>
+                  {['Private bedroom & bathroom', 'All meals included', 'Medication management', 'Housekeeping & laundry'].map((item, i) => (
+                    <div key={i} className="flex items-start space-x-2">
+                      <span className="text-gray-400 mt-0.5">→</span>
+                      <span className="text-sm text-gray-300">{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
-            {/* Customized Plan - Light Background */}
-            <div className="bg-[#F0F4F8] rounded-3xl p-8">
-              <h3 className="text-lg font-semibold text-[#1F2A44] mb-2">Customized plan</h3>
-              <div className="mb-6">
-                <button
-                  onClick={() => onNavigate('contact')}
-                  className="w-full py-3 bg-[#1F2A44] text-white rounded-lg font-semibold hover:bg-[#2D3E5F] transition-all"
-                >
-                  Contact us
-                </button>
-              </div>
-              <div className="space-y-3 pt-8">
-                <p className="text-sm font-semibold text-[#1F2A44] mb-3">Included features:</p>
+            {/* Customized Plan - Light Gray */}
+            <div className="bg-[#E8F4F8] rounded-3xl p-8">
+              <h3 className="text-2xl font-bold text-[#1F2A44] mb-8">Customized plan</h3>
+              <button
+                onClick={() => onNavigate('contact')}
+                className="w-full py-4 bg-[#0B1E3D] text-white rounded-2xl font-semibold mb-8 hover:bg-[#1F2A44] transition-all"
+              >
+                Contact us
+              </button>
+              <div className="space-y-3">
+                <p className="text-sm text-gray-500 mb-4">Included features:</p>
                 {['Fully customizable hours and care services', 'Comprehensive personal care', 'Health monitoring and specialized medical support', 'Customized meal planning and preparation'].map((item, i) => (
                   <div key={i} className="flex items-start space-x-2">
-                    <span className="text-[#1F2A44] mt-1">→</span>
+                    <span className="text-gray-600 mt-0.5">→</span>
                     <span className="text-sm text-gray-700">{item}</span>
                   </div>
                 ))}
