@@ -140,13 +140,14 @@ export default function Contact() {
             <div className="space-y-6">
               {/* Name */}
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-[#1F2A44] mb-2">
-                  Your Name *
-                </label>
+                {/* <label htmlFor="name" className="block text-sm font-semibold text-[#1F2A44] mb-2">
+                  Your Name * 
+                </label> */}
                 <input
                   type="text"
                   id="name"
                   required
+                  placeholder='Your Name *'
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 bg-gray-50 border-0 rounded text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E8B4A0]"
@@ -156,12 +157,13 @@ export default function Contact() {
               {/* Phone and Email */}
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-[#1F2A44] mb-2">
+                  {/* <label htmlFor="phone" className="block text-sm font-semibold text-[#1F2A44] mb-2">
                     Phone Number *
-                  </label>
+                  </label> */}
                   <input
                     type="tel"
                     id="phone"
+                    placeholder='Phone Number *'
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -170,13 +172,14 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-[#1F2A44] mb-2">
+                  {/* <label htmlFor="email" className="block text-sm font-semibold text-[#1F2A44] mb-2">
                     Email Address *
-                  </label>
+                  </label> */}
                   <input
                     type="email"
                     id="email"
                     required
+                    placeholder='Email Address *'
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full px-4 py-3 bg-gray-50 border-0 rounded text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E8B4A0]"
@@ -201,12 +204,13 @@ export default function Contact() {
 
               {/* Loved One's Age */}
               <div>
-                <label htmlFor="lovedOneAge" className="block text-sm font-semibold text-[#1F2A44] mb-2">
+                {/* <label htmlFor="lovedOneAge" className="block text-sm font-semibold text-[#1F2A44] mb-2">
                   Your Loved One's Age
-                </label>
+                </label> */}
                 <input
-                  type="text"
+                  type="number"
                   id="lovedOneAge"
+                  placeholder='Your loved ones Age'
                   value={formData.lovedOneAge}
                   onChange={(e) => setFormData({ ...formData, lovedOneAge: e.target.value })}
                   className="w-full px-4 py-3 bg-gray-50 border-0 rounded text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E8B4A0]"
