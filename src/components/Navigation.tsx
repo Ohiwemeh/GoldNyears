@@ -37,7 +37,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
   return (
     <header className="fixed w-full top-0 z-50 font-sans">
       {/* 1. TOP UTILITY BAR - Navy Background for Premium Feel */}
-      <div className="bg-[#1F2A44] text-white py-2 hidden lg:block transition-all duration-300">
+      {/* <div className="bg-[#1F2A44] text-white py-2 hidden lg:block transition-all duration-300">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center text-xs tracking-wide uppercase">
           <div className="flex items-center space-x-6">
             <span className="flex items-center opacity-80 hover:opacity-100 transition-opacity">
@@ -53,7 +53,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
              <span className="text-[#D4AF37] font-semibold">Accepting New Residents</span>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* 2. MAIN NAVIGATION - Glassmorphism & Elegant Layout */}
       <nav 
