@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
             <div>
               <p className="text-gray-400 text-sm mb-1">Call us on:</p>
-              <p className="text-white font-medium">Coming Soon</p>
+              <a href="tel:+19015877635" className="text-white font-medium hover:text-[#D4AF37] transition-colors">(901) 587-7635</a>
             </div>
           </div>
 

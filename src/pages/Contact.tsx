@@ -71,7 +71,12 @@ export default function Contact() {
             <div className="bg-gray-50 p-8 rounded-lg text-center">
               <Phone className="text-[#E8B4A0] mx-auto mb-4" size={48} strokeWidth={1.5} />
               <h3 className="text-xl font-serif text-gray-800 mb-3">Phone</h3>
-              <p className="text-gray-600">Coming Soon</p>
+              <a 
+                href="tel:+19015877635"
+                className="text-gray-600 hover:text-gray-800 transition-colors"
+              >
+                (901) 587-7635
+              </a>
             </div>
 
             {/* Email */}

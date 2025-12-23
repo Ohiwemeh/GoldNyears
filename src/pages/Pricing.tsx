@@ -50,7 +50,7 @@ export default function Pricing({ onNavigate }: PricingProps) {
             <div className="bg-[#FFF9E6] rounded-3xl p-8">
               <p className="text-[#D4AF37] text-sm font-semibold mb-3">Shared room plan</p>
               <div className="flex items-baseline mb-6">
-                <span className="text-5xl font-bold text-[#1F2A44]">$3,400</span>
+                <span className="text-5xl font-bold text-[#1F2A44]">$3,999</span>
                 <span className="text-gray-600 text-lg ml-1">/month</span>
               </div>
               <button
@@ -75,7 +75,7 @@ export default function Pricing({ onNavigate }: PricingProps) {
               <div className="bg-[#1F2A44] text-white rounded-3xl rounded-tr-[80px] p-8">
                 <p className="text-[#D4AF37] text-sm font-semibold mb-3">Private room plan</p>
                 <div className="flex items-baseline mb-6">
-                  <span className="text-5xl font-bold">$4,000</span>
+                  <span className="text-5xl font-bold">$4,500</span>
                   <span className="text-gray-300 text-lg ml-1">/month</span>
                 </div>
                 <button

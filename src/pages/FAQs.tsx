@@ -119,7 +119,7 @@ export default function FAQs() {
               Email Us
             </a>
             <a
-              href="tel:"
+              href="tel:+19015877635"
               className="btn-primary"
             >
               Call Us
